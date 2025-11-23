@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
 import 'package:template_flutter/common_widgets/custom_button.dart';
-import 'package:template_flutter/common_widgets/custom_text_button.dart';
 import 'package:template_flutter/constants/text_font_style.dart';
 import 'package:template_flutter/gen/assets.gen.dart';
 import 'package:template_flutter/gen/colors.gen.dart';
@@ -55,7 +54,8 @@ class OnboardingScreen extends StatelessWidget {
                     shaDowColor: AppColors.c20457E,
                     strokeColor: AppColors.c20457E,
                     onPressed: () {
-                      boolProvider.pressed();
+                      NavigationService.navigateTo(Routes.roleSectionScreeen);
+                      print("pressed void callback");
                     },
                     text: "I'm New Here!",
                   ),
@@ -63,8 +63,8 @@ class OnboardingScreen extends StatelessWidget {
                     height: 16.h,
                   ),
                   CustomButton(
-                      onPressed: () =>
-                          NavigationService.navigateTo(Routes.onboardingScreen),
+                      onPressed: () => NavigationService.navigateTo(
+                          Routes.roleSectionScreeen),
                       text: "I Already Have an Account",
                       backgroundColor: AppColors.allPrimaryColor,
                       strokeColor: AppColors.c20457E,

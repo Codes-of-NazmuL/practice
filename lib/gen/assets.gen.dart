@@ -12,12 +12,15 @@ import 'package:flutter/widgets.dart';
 class $AssetsIconsGen {
   const $AssetsIconsGen();
 
+  /// File path: assets/icons/arrow_back.svg
+  String get arrowBack => 'assets/icons/arrow_back.svg';
+
   /// File path: assets/icons/notification_icon.png
   AssetGenImage get notificationIcon =>
       const AssetGenImage('assets/icons/notification_icon.png');
 
   /// List of all assets
-  List<AssetGenImage> get values => [notificationIcon];
+  List<dynamic> get values => [arrowBack, notificationIcon];
 }
 
 class $AssetsImagesGen {

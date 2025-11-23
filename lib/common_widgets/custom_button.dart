@@ -149,12 +149,12 @@ class CustomButton extends StatefulWidget {
 class _CustomButtonState extends State<CustomButton> {
   bool isPressed = false;
 
-  _pressed() async{
-    
+  _pressed() {
     isPressed = true;
   }
 
-  _released() {
+  _released() async {
+    Future.delayed(Duration(milliseconds: 100));
     isPressed = false;
   }
 
@@ -166,8 +166,8 @@ class _CustomButtonState extends State<CustomButton> {
           setState(() {
             _pressed();
           });
-          
-          widget.onPressed;
+
+          widget.onPressed();
         },
         onTapUp: (details) => setState(() {
               _released();

@@ -18,9 +18,27 @@ class TextFontStyle {
     fontSize: 20.sp,
     fontWeight: FontWeight.w400,
   );
-    static final text16cFFFFFFw700ApercuPro = TextStyle(
+  static final text16cFFFFFFw700ApercuPro = TextStyle(
     fontFamily: "Apercu Pro",
     color: AppColors.secondaryColor,
+    fontSize: 16.sp,
+    fontWeight: FontWeight.w400,
+  );
+  static final text36cFFFFFFw700ApercuPro = TextStyle(
+    fontFamily: "Apercu Pro",
+    color: AppColors.secondaryColor,
+    fontSize: 36.sp,
+    fontWeight: FontWeight.w700,
+  );
+  static final text32c000000w700ApercuPro = TextStyle(
+    fontFamily: "Apercu Pro",
+    color: AppColors.c000000,
+    fontSize: 32.sp,
+    fontWeight: FontWeight.w700,
+  );
+  static final text16c000000w400ApercuPro = TextStyle(
+    fontFamily: "Apercu Pro",
+    color: AppColors.c000000,
     fontSize: 16.sp,
     fontWeight: FontWeight.w400,
   );
