@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:provider/provider.dart';
 import 'package:template_flutter/common_widgets/custom_button.dart';
 import 'package:template_flutter/constants/text_font_style.dart';
 import 'package:template_flutter/gen/assets.gen.dart';
 import 'package:template_flutter/gen/colors.gen.dart';
 import 'package:template_flutter/helpers/navigation_service.dart';
-import 'package:template_flutter/provider/button_shadow_provider.dart';
-
 import '../../../helpers/all_routes.dart';
 
 class OnboardingScreen extends StatelessWidget {
@@ -15,7 +12,6 @@ class OnboardingScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final boolProvider = Provider.of<ButtonShadowProvider>(context);
     return Scaffold(
       backgroundColor: AppColors.allPrimaryColor,
       body: Column(
@@ -71,7 +67,7 @@ class OnboardingScreen extends StatelessWidget {
                       shaDowColor: AppColors.c20457E),
                   SizedBox(
                     height: 10,
-                  )
+                  ),
                 ],
               ),
             ),

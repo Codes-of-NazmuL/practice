@@ -3,6 +3,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:template_flutter/features/kids%20side/auth/presentation/kids_sign_up_screen.dart';
+import 'package:template_flutter/features/onboarding/presentation/callin_test_screen.dart';
 import 'package:template_flutter/features/onboarding/presentation/onboarding_screen.dart';
 import 'package:template_flutter/features/role%20section/presentation/role_section_screeen.dart';
 
@@ -14,7 +15,7 @@ final class Routes {
   static const String onboardingScreen = "/OnboardingScreen";
   static const String roleSectionScreeen = "/roleSectionScreen";
   static const String kidsSignupScreen = "/kidsSignupScreen";
-
+  static const String callinTestScreen = "/CallinTestScreen";
 }
 
 final class RouteGenerator {
@@ -38,10 +39,14 @@ final class RouteGenerator {
                 widget: const RoleSectionScreeen(), settings: settings);
       case Routes.kidsSignupScreen:
         return defaultTargetPlatform == TargetPlatform.iOS
-            ? CupertinoPageRoute(
-                builder: (context) => const KidsSignUpScreen())
+            ? CupertinoPageRoute(builder: (context) => const KidsSignUpScreen())
             : _FadedTransitionRoute(
-                widget: const KidsSignUpScreen (), settings: settings);
+                widget: const KidsSignUpScreen(), settings: settings);
+      case Routes.callinTestScreen:
+        return defaultTargetPlatform == TargetPlatform.iOS
+            ? CupertinoPageRoute(builder: (context) => const CallinTestScreen())
+            : _FadedTransitionRoute(
+                widget: const CallinTestScreen(), settings: settings);
       default:
         return null;
     }

@@ -47,7 +47,9 @@ class RoleSectionScreeen extends StatelessWidget {
                 //   strokeColor: AppColors.allPrimaryColor,
                 // ),
                 RoleCard(
-                    onTap: () {},
+                    onTap: () {
+                      NavigationService.navigateTo(Routes.callinTestScreen);
+                    },
                     image: Assets.images.parentImage,
                     text: "Parent",
                     backgroundColor: AppColors.cFFA600)

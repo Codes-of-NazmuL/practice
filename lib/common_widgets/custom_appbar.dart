@@ -1,3 +1,45 @@
+import 'package:flutter/material.dart';
+
+class CustomAppbar extends StatelessWidget implements PreferredSizeWidget {
+  final double? height;
+  CustomAppbar({this.height});
+  @override
+  // TODO: implement preferredSize
+  Size get preferredSize => throw UnimplementedError();
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: double.infinity,
+      height: height ?? 60,
+    );
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // // lib/common_widgets/custom_appbar.dart
 // import 'package:flutter/material.dart';
 // import 'package:flutter_screenutil/flutter_screenutil.dart';

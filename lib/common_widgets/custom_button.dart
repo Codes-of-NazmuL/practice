@@ -124,7 +124,6 @@ import 'package:provider/provider.dart';
 // }
 
 import 'package:template_flutter/constants/text_font_style.dart';
-import 'package:template_flutter/gen/colors.gen.dart';
 import 'package:template_flutter/provider/button_shadow_provider.dart';
 
 class CustomButton extends StatefulWidget {
